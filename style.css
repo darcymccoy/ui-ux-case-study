@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #292929;
+    background: #fff;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+
+.article {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+}
+
+.hero {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 48px;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    background: #f2f2f2;
+
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #757575;
+    margin-bottom: 28px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.meta-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+.section {
+    margin-bottom: 56px;
+}
+
+.section h2 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+    padding-top: 8px;
+}
+
+.section h3 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    color: #333;
+}
+
+.section p {
+    margin-bottom: 16px;
+    color: #444;
+}
+
+figure {
+    margin: 28px 0;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 6px;
+    background: #f2f2f2;
+
+    min-height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 28px 0;
+}
+
+.image-row figure {
+    flex: 0 0 calc((100% - 40px) / 3);
+    margin: 0;
+}
+
+.image-row figure img {
+    height: 480px;
+    min-height: unset;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .article {
+        padding: 0 16px 60px;
+    }
+
+    .hero {
+        padding: 32px 0 28px;
+        margin-bottom: 32px;
+    }
+
+    .image-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .image-row figure {
+        flex: 0 0 100%;
+    }
+
+    .image-row figure img {
+        height: auto;
+    }
+}
