@@ -84,6 +84,51 @@ body {
     color: #757575;
 }
 
+.toc {
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-bottom: 56px;
+}
+
+.toc h2 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    color: #292929;
+}
+
+.toc ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.toc ol ol {
+    list-style: lower-alpha;
+    margin-top: 4px;
+}
+
+.toc li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.toc a {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.toc a:hover {
+    color: #000;
+    border-bottom-color: #999;
+}
+
 .section {
     margin-bottom: 56px;
 }
